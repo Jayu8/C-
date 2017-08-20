@@ -15,4 +15,4 @@ class Shape {
       virtual int area() = 0;
 };
 
-// here = 0 , tells that there is no special meaning inbase class
+// here = 0 , tells that there is no special meaning in the base class hence a pure virtual function
