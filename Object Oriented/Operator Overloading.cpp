@@ -25,8 +25,8 @@ class Box {
          height = hei;
       }
 		
-      // Overload + operator to add two Box objects.
-      Box operator+(const Box& b) {
+      // IMPPORTANT Overload + operator to add two Box objects.
+      Box operator + (const Box& b) {
          Box box;
          box.length = this->length + b.length;
          box.breadth = this->breadth + b.breadth;
