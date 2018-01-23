@@ -47,7 +47,8 @@ used commonly in function arguments to change data types(int->char)etc
 void * p = 0;
 int * q = nullptr;
 ```
-**Pointer to functions**
+**A void pointer cannot be incremented**
 ```
-int (* func_name)(int,int) = subtraction
+p++ //WRONG as we dont know by how much the pointer must be incremented
 ```
+Function pointers have varying length, though normal datatypes have same pointer size. hence the above code is wrong. 
