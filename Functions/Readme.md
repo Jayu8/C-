@@ -35,7 +35,14 @@ void foo(double &bar)
    double foobar = 0.0;
    foo(bar, foobar);
 }
-```	
+```
+**Easy example**
+```
+by pointer              by reference
+(independent )        (dependtent,thus never NULL)
+pointer => value,  value => pointer
+```
+
 **Call by rvalue reference:**
 ```C
 ```
