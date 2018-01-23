@@ -50,5 +50,13 @@ int * q = nullptr;
 **A void pointer cannot be incremented**
 ```
 p++ //WRONG as we dont know by how much the pointer must be incremented
+(int*)p++ also correct as we know now increment by 8 for(64 bit machine) 
 ```
-Function pointers have varying length, though normal datatypes have same pointer size. hence the above code is wrong. 
+Function pointers have varying length unlike datatypes, hence the above code is wrong ad dont know how much to increment.<br>
+**A void cannot be dereferenced**
+```
+*p // WRONG as it not of any type and cant tell  how to.
+* (int*)(*p) // CORRECT typecast to an integer pointer and then derefernce it
+
+```
+**UseCase: malloc returns null pointer , telling it has UNALLOCATED MEMORY.**
